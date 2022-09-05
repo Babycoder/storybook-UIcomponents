@@ -8,13 +8,13 @@ export interface Props extends HTMLAttributes<HTMLButtonElement>{
 
 }
 
-const Button: React.FC<Props>  = ({children, ...props}) => {
+const Button: React.FC<Props>  = ({children, variant = 'primary', ...props}) => {
     return (
-        <button {...props}>
-            
+        <button className='bg-gray-400 border rounded' {...props}>
+            {children}
         </button>
     )
 }
 
-export default Button;
+export default Button
  
