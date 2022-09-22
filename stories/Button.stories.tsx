@@ -31,12 +31,14 @@ export const Secondary = Template.bind({});
 
 Primary.args ={
     type : 'primary',
+    ability : true,
     children : 'Buy daba',
     onClick: action('Primary click'),
 }
 
 Secondary.args ={
     type : 'secondary',
+    abiliry : true,
     children : 'Buy now',
     onClick: action('Secondary click'),
 
