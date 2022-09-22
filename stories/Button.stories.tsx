@@ -10,8 +10,52 @@ const meta:Meta = {
 
 export default meta;
 
+const Template: Story<Props> = (args) => <Button {...args} />
 
-export const Default = () => <Button variant="primary">Click Me</Button>
 
-export const Scondary = () => <Button variant='secondary'> Secondary</Button>
+
+/*export const Default = () => <Button type="primary">Click Me</Button>
+
+export const Scondary = () => <Button type='secondary'> Click Me</Button>*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
