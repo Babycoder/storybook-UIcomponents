@@ -1,13 +1,13 @@
 import React from 'react';
 import {Meta, Story} from '@storybook/react'
-import {Props}  from "../src/Button"
+import {Props}  from "../src/InlineButton"
 import {action} from '@storybook/addon-actions'
 
-import Button from '../src/Button'
+import InlineButton from '../src/InlineButton'
 
 const meta:Meta = {
-    title : 'Button',
-    component: Button,
+    title : 'InlineButton',
+    component: InlineButton,
     argTypes: {
         
         onClick: { action :'clicked' },
@@ -20,7 +20,7 @@ const meta:Meta = {
 
 export default meta;
 
-const Template: Story<Props> = (args) => <Button {...args} />
+const Template: Story<Props> = (args) => <InlineButton {...args} />
 
 export const Default = Template.bind({});
 
@@ -32,60 +32,14 @@ export const Secondary = Template.bind({});
 Primary.args ={
     type : 'primary',
     ability : true,
-    children : 'primary button',
+    children : 'primary inlinebutton',
     onClick: action('Primary click'),
 }
 
 Secondary.args ={
     type : 'secondary',
     ability : true,
-    children : 'secondary button',
+    children : 'secondary inlinebutton',
     onClick: action('Secondary click'),
 
 }
-
-/*export const Default = () => <Button type="primary">Click Me</Button>
-
-export const Scondary = () => <Button type='secondary'> Click Me</Button>*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
