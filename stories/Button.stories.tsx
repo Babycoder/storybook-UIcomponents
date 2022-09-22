@@ -38,7 +38,7 @@ Primary.args ={
 
 Secondary.args ={
     type : 'secondary',
-    abiliry : true,
+    ability : true,
     children : 'Buy now',
     onClick: action('Secondary click'),
 
