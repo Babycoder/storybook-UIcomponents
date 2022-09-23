@@ -35,7 +35,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "ui-components",
+  "name": "@ezio_/ui-components",
   "author": "aymenghazali1999@gmail.com",
   "module": "dist/ui-components.esm.js",
   "size-limit": [

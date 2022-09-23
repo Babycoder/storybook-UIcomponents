@@ -1,7 +1,7 @@
 import React, {HTMLAttributes, ReactNode} from 'react'
 
 
-export interface Props extends HTMLAttributes<HTMLButtonElement>
+export interface InlineProps extends HTMLAttributes<HTMLButtonElement>
 {
     children : ReactNode;
     ability : boolean;
@@ -17,7 +17,7 @@ const style = {
 }
 
 
-const InlineButton: React.FC<Props>  = ({children, type = 'primary', ability = true, ...props}) => {
+const InlineButton: React.FC<InlineProps>  = ({children, type = 'primary', ability = true, ...props}) => {
     return (
         <button className={` ${type === 'primary' ? style.primary : style.secondary} ${ability ? '' : 'cursor-not-allowed'}`} {...props}>
             {children}

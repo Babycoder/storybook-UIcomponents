@@ -1,6 +1,6 @@
 import React from 'react';
 import {Meta, Story} from '@storybook/react'
-import {Props}  from "../src/InlineButton"
+import {InlineProps}  from "../src/InlineButton"
 import {action} from '@storybook/addon-actions'
 
 import InlineButton from '../src/InlineButton'
@@ -20,7 +20,7 @@ const meta:Meta = {
 
 export default meta;
 
-const Template: Story<Props> = (args) => <InlineButton {...args} />
+const Template: Story<InlineProps> = (args) => <InlineButton {...args} />
 
 export const Default = Template.bind({});
 

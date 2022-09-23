@@ -5,7 +5,7 @@ export interface Props extends HTMLAttributes<HTMLButtonElement>
 {
     children : ReactNode;
     ability : boolean;
-    type : 'primary' | 'secondary' | 'inline';
+    type : 'primary' | 'secondary';
 }
 
 const style = {
